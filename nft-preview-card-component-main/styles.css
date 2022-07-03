@@ -1,0 +1,116 @@
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+.card{
+    background-color:  hsl(216, 50%, 16%);
+    height: 520px;
+    width: 300px;
+    margin: 90px auto 90px ;
+    position: relative;
+    border-radius: 15px;
+}
+.image{
+    height: 250px;
+    width: 250px;
+}
+.av1{
+    padding: 5px;
+}
+.av{
+    height: 25px;
+    border: solid;
+    border-color: hsl(0, 0%, 100%);
+    border-radius: 100%;
+    border-width: 1px;
+    float: left;
+    margin-top: 5px;
+}
+hr{
+    color:hsl(215, 32%, 27%);
+    width: 90%;
+    border: 0.5px solid;
+}.image{
+    float: top;
+    padding: 25px 25px 20px;
+}
+h3{
+    color:hsl(0, 0%, 100%) ;
+    margin-top: 0;
+    font-weight: 600;
+   
+}p{
+    font-size: 18px;
+}
+.ava{
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    padding-left: 40px;
+    
+    font-size: small;
+}
+.days{font-weight: 400;
+    color: hsl(215, 51%, 70%);
+    display: inline-block;
+    position: absolute;
+    right: 19px;
+    top: 390px;
+    font-size:small;
+}
+.info{
+    padding-left: 25px;
+    
+}
+.day{
+    position: absolute;
+    right: 80px;
+    top: 405px;
+}
+
+
+.matter{
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    font-size: smaller;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    
+}
+.price{
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+    display: inline-block;
+    font-size: small;
+
+  
+}
+.name{
+    color:hsl(0, 0%, 100%); ;
+}
+.is{
+    height: 520px;
+        width: 300px;
+    box-shadow:  -10px  -10px 8px 12px #0c1729  , -30px -30px 5px 12px #0c192c;
+        margin: 90px auto 90px;
+}
+.os {
+    height: 520px;
+    width: 300px;
+    box-shadow: 10px 10px 5px 12px #0c1729;
+    margin: 90px auto 90px;
+}
+
+h3:hover{
+    color: hsl(178, 100%, 50%);
+}
+.name:hover{
+    color:hsl(178, 100%, 50%);
+}
+.image:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+
+
+

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+ <link rel="stylesheet" href="/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    
+    
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+.card{
+    background-color:  hsl(216, 50%, 16%);
+    height: 520px;
+    width: 300px;
+    margin: 90px auto 90px ;
+    position: relative;
+    border-radius: 15px;
+}
+.image{
+    height: 250px;
+    width: 250px;
+}
+.av1{
+    padding: 5px;
+}
+.av{
+    height: 25px;
+    border: solid;
+    border-color: hsl(0, 0%, 100%);
+    border-radius: 100%;
+    border-width: 1px;
+    float: left;
+    margin-top: 5px;
+}
+hr{
+    color:hsl(215, 32%, 27%);
+    width: 90%;
+    border: 0.5px solid;
+}.image{
+    float: top;
+    padding: 25px 25px 20px;
+}
+h3{
+    color:hsl(0, 0%, 100%) ;
+    margin-top: 0;
+    font-weight: 600;
+   
+}p{
+    font-size: 18px;
+}
+.ava{
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    padding-left: 40px;
+    
+    font-size: small;
+}
+.days{font-weight: 400;
+    color: hsl(215, 51%, 70%);
+    display: inline-block;
+    position: absolute;
+    right: 19px;
+    top: 390px;
+    font-size:small;
+}
+.info{
+    padding-left: 25px;
+    
+}
+.day{
+    position: absolute;
+    right: 80px;
+    top: 405px;
+}
+
+
+.matter{
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    font-size: smaller;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    
+}
+.price{
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+    display: inline-block;
+    font-size: small;
+
+  
+}
+.name{
+    color:hsl(0, 0%, 100%); ;
+}
+.is{
+    height: 520px;
+        width: 300px;
+    box-shadow:  -10px  -10px 8px 12px #0c1729  , -30px -30px 5px 12px #0c192c;
+        margin: 90px auto 90px;
+}
+.os {
+    height: 520px;
+    width: 300px;
+    box-shadow: 10px 10px 5px 12px #0c1729;
+    margin: 90px auto 90px;
+}
+
+h3:hover{
+    color: hsl(178, 100%, 50%);
+}
+.name:hover{
+    color:hsl(178, 100%, 50%);
+}
+.image:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Make the image to responsive */
+.image {
+  width: 85%;
+  height: auto;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  top: 25px;
+  bottom: 0;
+  left: 25px;
+  right: 0;
+ height: 84%;
+  width: 85%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #00a0b8;
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.container:hover .overlay {
+  opacity: 0.5;
+}
+
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* When you move the mouse over the icon, change color */
+.fa-user:hover {
+  color: rgb(255, 255, 255);
+}
+
+
+
+
+  </style>
+</head>
+<body>
+  <div class="os">
+    <div class="is">
+      
+<div class="card">
+       <div class="img container">
+          <img  class="image img1" src="/nft-preview-card-component-main/images/image-equilibrium.jpg" alt="Equilibrium-image">
+        <div class="overlay">
+            <a href="#" class="icon" >
+            <i class='fa fa-eye' style='color: white'></i>
+            
+            </a>
+        </div>
+       </div>
+ <div class="info">
+    <h3>Equilibrium #3429</h3>
+    <p class="matter">Our Equilibrium collection promotes balance and calm.</p>
+    <div>
+      <img  class="price" src="/nft-preview-card-component-main/images/icon-ethereum.svg" alt="" height="13px">
+    <p class="price"> 0.041 ETH</p>
+  </div>
+  <div>
+<img  class="day" src="../nft-preview-card-component-main/images/icon-clock.svg" height="14px" alt="">
+    <p class="days"> 3 days left</p>
+    </div>
+ <hr> 
+     <div class="av1">
+         <img class="av" src="/nft-preview-card-component-main/images/image-avatar.png" alt="avatar">
+          <p class="ava"> Creation of <span class="name"> Jules Wyvern </span></p>
+     </div>
+</div>
+</div>
+    </div>
+  </div>
+
+   <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/SPARSH1608">Sparsh Goel</a>.
+   </div>
+</body>
+</html>
